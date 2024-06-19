@@ -16,6 +16,24 @@ $(document).ready(function () {
         animateIn: "fadeInDown",
     });
 
+    $("#promo").owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 1500,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 5,
+                autoplay: false,
+            },
+            600: {
+                items: 4,
+            },
+        },
+    });
+
     $("#client").owlCarousel({
         margin: 150,
         loop: true,
@@ -34,6 +52,25 @@ $(document).ready(function () {
             },
         },
     });
+
+    // $("#promo").owlCarousel({
+    //     margin: 50,
+    //     loop: true,
+    //     autoplay: true,
+    //     autoplayTimeout: 3000,
+    //     animateOut: "slieOutLeft",
+    //     animateIn: "slideInRight",
+    //     smartSpeed: 1000,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //             margin: 10,
+    //         },
+    //         600: {
+    //             items: 3,
+    //         },
+    //     },
+    // });
 });
 
 (function () {

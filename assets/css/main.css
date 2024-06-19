@@ -973,6 +973,10 @@ section,
     }
 }
 
+.promo {
+    --background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+}
+
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
